@@ -39,7 +39,6 @@ export default {
   data() {
     return {
       sideWidth: 250,
-      fontFamily: 'Default Initial',
     };
   },
   created() {
@@ -110,6 +109,7 @@ export default {
 </script>
 
 <style type="text/css">
+  @import "theme/fonts/font.css";
 html {
   height: 100%;
 }
@@ -119,11 +119,12 @@ body {
   margin: 0;
   box-sizing: border-box;
   /*font: caption;*/
+  font-family: pingfang;
 }
 
-button, input, textarea, .vjs__tree {
-  font-family: inherit !important;
-}
+/*button, input, textarea, .vjs__tree {*/
+  /*font-family: inherit !important;*/
+/*}*/
 
 ::-webkit-scrollbar {
   width: 9px;
